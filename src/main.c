@@ -13,6 +13,8 @@
 #include <apr_general.h>
 #include <apr_pools.h>
 
+#include "teszt.h"
+
 #define MEM_ALLOC_SIZE		1024
 
 /**
@@ -38,6 +40,9 @@ int main(int argc, const char *argv[]) {
     buf1 = apr_palloc(mp, MEM_ALLOC_SIZE);
     buf2 = apr_palloc(mp, MEM_ALLOC_SIZE);
     /* destroy the memory pool. These chunks above are freed by this */
+
+    teszt(mp);
+
     apr_pool_destroy(mp);
     apr_terminate();
     return 0;

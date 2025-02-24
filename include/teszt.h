@@ -4,6 +4,7 @@
 #include <stdio.h>
 
 #include <apr_general.h>
+#include <apr_strings.h>
 
 APR_DECLARE(void) teszt(apr_pool_t *p_mp);
 
