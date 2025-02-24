@@ -1,3 +1,7 @@
+rm -Rf ../apr-ocr-build &&
+cmake -S . -B ../apr-ocr-build && cmake --build ../apr-ocr-build && ../apr-ocr-build/apr-ocr
+
+
 CMAKE_ADDR2LINE=/usr/bin/addr2line
 CMAKE_AR=/usr/bin/ar
 CMAKE_AR=/usr/bin/ar
