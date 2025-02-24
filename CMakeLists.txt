@@ -1,4 +1,4 @@
-cmake_minimum_required(3.31)
+cmake_minimum_required(VERSION 3.25)
 
 project(apr-ocr C)
 
