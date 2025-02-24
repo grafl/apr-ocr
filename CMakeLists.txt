@@ -13,7 +13,7 @@ if (APR_FOUND)
     target_link_libraries(${PROJECT_NAME} ${APR_LIBRARY})
 
     add_library(lib${PROJECT_NAME} src/teszt.c)
-    target_include_directories(lib${PROJECT_NAME} PRIVATE ${APR_INCLUDE_DIR})
+    target_include_directories(lib${PROJECT_NAME} PRIVATE ${APR_INCLUDE_DIR} ${CMAKE_CURRENT_LIST_DIR}/include)
     target_link_libraries(lib${PROJECT_NAME} ${APR_LIBRARY})
 
 endif (APR_FOUND)
