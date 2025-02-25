@@ -45,5 +45,6 @@ int main(int argc, const char *argv[]) {
 
     apr_pool_destroy(mp);
     apr_terminate();
+    printf("APR has been torn down.\n");
     return 0;
 }
